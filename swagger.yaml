@@ -1,0 +1,48 @@
+openapi: 3.0.0
+info:
+  title: Scraper API Full
+  version: 1.0.0
+servers:
+  - url: https://YOUR_RENDER_URL.onrender.com
+paths:
+  /api/viu:
+    get:
+      summary: Get VIU Account
+      tags: [VIU]
+      responses: { '200': { description: Success } }
+  /api/naxa:
+    post:
+      summary: Naxa AI
+      tags: [Naxa]
+      requestBody: { content: { application/json: { schema: { type: object } } } }
+      responses: { '200': { description: Success } }
+  /api/deepseek:
+    post:
+      summary: DeepSeek Chat
+      tags: [DeepSeek]
+      requestBody: { content: { application/json: { schema: { type: object } } } }
+      responses: { '200': { description: Success } }
+  /api/chatgpt:
+    post:
+      summary: ChatGPT Anon
+      tags: [ChatGPT]
+      requestBody: { content: { application/json: { schema: { type: object } } } }
+      responses: { '200': { description: Success } }
+  /api/wink:
+    post:
+      summary: Wink Upscale
+      tags: [Wink]
+      requestBody: { content: { application/json: { schema: { type: object } } } }
+      responses: { '200': { description: Success } }
+  /api/alight:
+    post:
+      summary: Alight Motion Gen
+      tags: [Alight]
+      requestBody: { content: { application/json: { schema: { type: object } } } }
+      responses: { '200': { description: Success } }
+  /api/kiyora:
+    post:
+      summary: Kiyora AI
+      tags: [Kiyora]
+      requestBody: { content: { application/json: { schema: { type: object } } } }
+      responses: { '200': { description: Success } }
